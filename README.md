@@ -26,9 +26,9 @@ TSADResearch/
 
 Anomaly Transformer是一种基于关联差异(Association Discrepancy)的时间序列异常检测方法，发表于ICLR 2022（Spotlight）。该模型引入了：
 
-- 一种固有的可区分标准：**关联差异(Association Discrepancy)**
-- 新的**异常注意力(Anomaly-Attention)**机制来计算关联差异
-- **极小极大(minimax)策略**来放大关联差异的正常-异常可区分性
+- 一种固有的可区分标准：关联差异(Association Discrepancy)
+- 新的异常注意力(Anomaly-Attention)机制来计算关联差异
+- 极小极大(minimax)策略来放大关联差异的正常-异常可区分性
 
 ### 2. MEMTO
 
@@ -46,7 +46,10 @@ MEMTO (Memory-guided Transformer)是一种用于多变量时间序列异常检�
 - PSM (Pooled Server Metrics)
 - SMAP (Soil Moisture Active Passive satellite)
 - SMD (Server Machine Dataset)
-- SWaT (Secure Water Treatment)
+- SWaT (Secure Water Treatment)<br>
+本项目中的数据集可以从以下网址获取：[常用数据集](https://github.com/LMissher/TFMAE/tree/main/dataset)
+
+请根据各模型的需求下载并放置到相应的 `data` 或者 `dataset` 目录下。
 
 ## 使用方法
 
@@ -66,34 +69,4 @@ bash test.sh
 
 ## 环境要求
 
-- Python 3.6+
-- PyTorch >= 1.4.0
-- 其他依赖请参考各模型目录下的requirements.txt文件
-
-## 引用
-
-如果您在研究中使用了这些模型，请引用相应的论文：
-
-### Anomaly-Transformer
-```
-@inproceedings{
-xu2022anomaly,
-title={Anomaly Transformer: Time Series Anomaly Detection with Association Discrepancy},
-author={Jiehui Xu and Haixu Wu and Jianmin Wang and Mingsheng Long},
-booktitle={International Conference on Learning Representations},
-year={2022},
-url={https://openreview.net/forum?id=LzQQ89U1qm_}
-}
-```
-
-### MEMTO
-```
-@inproceedings{
-anonymous2023memto,
-title={{MEMTO}: Memory-guided Transformer for Multivariate Time Series Anomaly Detection},
-author={Junho Song, Keonwoo Kim, Jeonglyul Oh, Sungzoon Cho},
-booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
-year={2023},
-url={https://openreview.net/forum?id=UFW67uduJd}
-}
-```
+- 请参考各模型目录下的requirements.txt文件
